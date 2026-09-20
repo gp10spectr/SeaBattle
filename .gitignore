@@ -67,3 +67,14 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+packages/
+*.nupkg
+
+.vs/
+x64/
+Debug/
+Release/
+packages/
+*.user
+*.suo
