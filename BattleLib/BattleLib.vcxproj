@@ -139,6 +139,12 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="GameField.h" />
+    <ClInclude Include="Position.h" />
+    <ClInclude Include="Ship.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Position.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
