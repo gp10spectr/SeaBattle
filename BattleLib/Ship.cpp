@@ -56,3 +56,36 @@ Ship::Ship(std::vector<Position> pos) {
 	positions = std::move(pos);
 }
 
+const std::vector<Position>& Ship::get_positions() const noexcept {
+	return positions;
+}
+
+const std::vector<Position>& Ship::get_hits() const noexcept {
+	return hits;
+}
+
+bool Ship::operator==(const Ship& other) const {
+	return (*this).positions == other.positions;
+}
+
+bool Ship::contains(const Position& pos) const {
+	if (std::find((*this).positions.begin(), (*this).positions.end(), pos) != positions.end()) {
+		return true;
+	}
+	return false;
+}
+
+bool Ship::hit(const Position& pos) {
+	if (!contains(pos)) {
+		return false;
+	}
+	if (std::find((*this).hits.begin(), (*this).hits.end(), pos) != hits.end()) {
+		return false;
+	}
+	hits.push_back(pos);
+	return true;
+}
+
+bool Ship::is_sunk() const {
+	return (positions.size() == hits.size());
+}
