@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "GameField.h"
 
-TEST(GameFieldTest, InitilizerConstructor) {
+TEST(GameFieldTest, InitializerConstructor) {
     GameField f(10, 8);
     EXPECT_EQ(f.get_width(), 10);
     EXPECT_EQ(f.get_height(), 8);
@@ -41,7 +41,7 @@ TEST(GameFieldTest, ShipsTouchesDiagonal) {
     EXPECT_EQ(field.get_ships().size(), 2u);
 }
 
-TEST(GameFieldTest, ShipsDoNotTouches) {
+TEST(GameFieldTest, PlaceFourShips) {
     GameField field(10, 10);
     Ship ship1({ Position(0, 0) });
     Ship ship2({ Position(2, 0), Position(3, 0) });
