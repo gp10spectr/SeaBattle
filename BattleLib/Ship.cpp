@@ -10,6 +10,11 @@ Ship::Ship(std::vector<Position> pos) {
 		throw std::invalid_argument("invalid size of ship");
 	}
 	for (int i = 0; i < size; i++) {
+		if (pos[i].getx() < 0 || pos[i].gety() < 0) {
+			throw std::invalid_argument("neg coordinates");
+		}
+	}
+	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < i; j++) {
 			if (pos[i] == pos[j]) {
 				throw std::invalid_argument("two equal cells are taken");
