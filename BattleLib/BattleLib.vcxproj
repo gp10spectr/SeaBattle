@@ -139,6 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Game.h" />
     <ClInclude Include="GameField.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Position.h" />

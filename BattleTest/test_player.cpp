@@ -26,9 +26,9 @@ TEST(PlayerTest, CanPlaceShip) {
 	EXPECT_EQ(p.get_field().get_ships().size(), 1u);
 }
 
-TEST(PlayerTest, DefeatedWithEmptyField) {
+TEST(PlayerTest, NotDefeatedWithEmptyField) {
 	Player player("Emperor", 10, 10);
-	EXPECT_TRUE(player.defeated());
+	EXPECT_FALSE(player.defeated());
 }
 
 TEST(PlayerTest, NotDefeated) {

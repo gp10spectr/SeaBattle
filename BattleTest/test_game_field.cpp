@@ -112,9 +112,9 @@ TEST(GameFieldTest, ShootSameCellTwiceIsAlreadyShot) {
     EXPECT_EQ(f.get_shots().size(), 1u);
 }
 
-TEST(GameFieldTest, AllSunkEmptyFieldReturnsTrue) {
+TEST(GameFieldTest, AllSunkEmptyFieldReturnsFalse) {
     GameField f(5, 5);
-    EXPECT_TRUE(f.all_sunk());
+    EXPECT_FALSE(f.all_sunk());
 }
 
 TEST(GameFieldTest, AllSunkWithAliveShip) {

@@ -64,6 +64,9 @@ ShotResult GameField::shoot(const Position& pos) {
 }
 
 bool GameField::all_sunk() const {
+	if (ships.empty()) {
+		return false;
+	}
 	for (const Ship& ship : ships) {
 		if (!ship.is_sunk()) {
 			return false;
