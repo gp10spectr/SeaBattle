@@ -11,7 +11,15 @@ const Player& Game::get_player(int i) const {
 	return players[i];
 }
 
+Player& Game::get_player(int i) {
+	return players[i];
+}
+
 const Player& Game::get_current_player() const {
+	return players[turn];
+}
+
+Player& Game::get_current_player() {
 	return players[turn];
 }
 

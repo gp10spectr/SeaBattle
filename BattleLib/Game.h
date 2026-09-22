@@ -9,7 +9,9 @@ private:
 public:
 	Game(std::string name1, std::string name2, int w, int h);
 	const Player& get_player(int i) const;
+	Player& get_player(int i);
 	const Player& get_current_player() const;
+	Player& get_current_player();
 	ShotResult play_turn(const Position& pos);
 	bool is_over() const;
 	int get_winner_index() const;
