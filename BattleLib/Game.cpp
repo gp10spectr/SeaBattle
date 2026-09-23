@@ -15,6 +15,10 @@ Player& Game::get_player(int i) {
 	return players[i];
 }
 
+int Game::get_current_index() const noexcept {
+	return turn;
+}
+
 const Player& Game::get_current_player() const {
 	return players[turn];
 }
