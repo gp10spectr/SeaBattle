@@ -3,7 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="BattleLib/BattleLib.vcxproj" />
-  <Project Path="BattleTest/BattleTest.vcxproj" />
-  <Project Path="SeaBattle/SeaBattle.vcxproj" />
+  <Project Path="BattleLib/BattleLib.vcxproj" Id="7cbbc65c-cb1f-4cdf-984a-4c54cb5fc37a" />
+  <Project Path="BattleTest/BattleTest.vcxproj" Id="73169b13-4c92-4c88-bc1f-25103136c5d5" />
+  <Project Path="SeaBattle/SeaBattle.vcxproj" Id="a1290fc7-98ee-4a70-ad72-82aaabfca743" />
 </Solution>
